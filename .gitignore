@@ -1,0 +1,13 @@
+# Jupyter Notebook
+
+.ipynb_checkpoints/
+.idea/
+
+# Tensorboard Logs
+runs/
+
+# Numpy arrays
+*.npy
+
+# Pytorch models
+*.pt
