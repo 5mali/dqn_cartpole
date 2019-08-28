@@ -2,7 +2,7 @@
 # Example : python3 train.py config/example.yaml 123
     
 # GPU Acceleration
-USE_GPU : True
+USE_GPU : False
 
 # EXPLORATION POLICY
 EPSILON_START: 1.0
@@ -15,7 +15,7 @@ BATCH_SIZE: 32
 
 
 # DRL PARAMETERS
-TIMESTEPS: 10_000
+TIMESTEPS: 50_000
 REPLAY_BUFFER_SIZE: 1000
 TARGET_UPDATE_FREQ: 100
 GAMMA: 0.99
