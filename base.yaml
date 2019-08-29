@@ -28,7 +28,7 @@ GAMMA: 0.99
 # DuDQN: DQN with Dueling Architecture
 # DuD2QN: Double DQN with Dueling Architecture
 
-MODEL_NAME: 'D2QN' #'D2QN' 'D1QN' 'DQN' 'DuDQN' 'DuD2QN'
+MODEL_NAME: 'DuD2QN' #'D2QN' 'D1QN' 'DQN' 'DuDQN' 'DuD2QN'
 OPTIMIZER: 'Adam' #'SGD'
 LEARNING_RATE: 0.1
 CRITERION: 'MSE' #'HUBER'
