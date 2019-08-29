@@ -2,7 +2,7 @@
 # Example : python3 train.py config/example.yaml 123
     
 # GPU Acceleration
-USE_GPU : False
+USE_GPU : True
 
 # EXPLORATION POLICY
 EPSILON_START: 1.0
@@ -15,13 +15,20 @@ BATCH_SIZE: 32
 
 
 # DRL PARAMETERS
-TIMESTEPS: 50_000
+TIMESTEPS: 1_000_000
+REPLAY_BUFFER: 'Naive' # 'NaivePrioritized'
 REPLAY_BUFFER_SIZE: 1000
 TARGET_UPDATE_FREQ: 100
 GAMMA: 0.99
 
 # MODEL
-MODEL_NAME: 'D1QN' #'D2QN' 'D1QN' 'DQN' 'D3QN'
+# D1QN : Single network DQN
+# DQN : Two network DQN with frozen target model
+# D2QN: Double DQN
+# DuDQN: DQN with Dueling Architecture
+# DuD2QN: Double DQN with Dueling Architecture
+
+MODEL_NAME: 'D2QN' #'D2QN' 'D1QN' 'DQN' 'DuDQN' 'DuD2QN'
 OPTIMIZER: 'Adam' #'SGD'
 LEARNING_RATE: 0.1
 CRITERION: 'MSE' #'HUBER'
