@@ -15,20 +15,20 @@ BATCH_SIZE: 32
 
 
 # DRL PARAMETERS
-TIMESTEPS: 1_000_000
+TIMESTEPS: 100_000
 REPLAY_BUFFER: 'Naive' # 'NaivePrioritized'
 REPLAY_BUFFER_SIZE: 1000
 TARGET_UPDATE_FREQ: 100
 GAMMA: 0.99
 
 # MODEL
-# D1QN : Single network DQN
 # DQN : Two network DQN with frozen target model
+# D1QN : Single network DQN
 # D2QN: Double DQN
 # DuDQN: DQN with Dueling Architecture
 # DuD2QN: Double DQN with Dueling Architecture
 
-MODEL_NAME: 'DuD2QN' #'D2QN' 'D1QN' 'DQN' 'DuDQN' 'DuD2QN'
+MODEL_NAME: 'D1QN' #'D2QN' 'D1QN' 'DQN' 'DuDQN' 'DuD2QN'
 OPTIMIZER: 'Adam' #'SGD'
-LEARNING_RATE: 0.1
+LEARNING_RATE: 0.001
 CRITERION: 'MSE' #'HUBER'
