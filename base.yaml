@@ -15,7 +15,7 @@ BATCH_SIZE: 32
 
 
 # DRL PARAMETERS
-TIMESTEPS: 100_000
+TIMESTEPS: 10_000
 REPLAY_BUFFER: 'Naive' # 'NaivePrioritized'
 REPLAY_BUFFER_SIZE: 1000
 TARGET_UPDATE_FREQ: 100
@@ -28,7 +28,14 @@ GAMMA: 0.99
 # DuDQN: DQN with Dueling Architecture
 # DuD2QN: Double DQN with Dueling Architecture
 
-MODEL_NAME: 'D1QN' #'D2QN' 'D1QN' 'DQN' 'DuDQN' 'DuD2QN'
+MODEL_NAME: 'DuDQN' #'D2QN' 'D1QN' 'DQN' 'DuDQN' 'DuD2QN'
 OPTIMIZER: 'Adam' #'SGD'
 LEARNING_RATE: 0.001
 CRITERION: 'MSE' #'HUBER'
+
+# RUNNING TIME WITH GPU ACCEL
+# DQN   : 2min 50sec
+# D1QN  : 2min 49sec
+# D2QN  : 3min 3sec
+# DuDQN : 4min 5sec
+# DuD2QN: 4min 17sec
