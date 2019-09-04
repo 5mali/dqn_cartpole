@@ -5,9 +5,14 @@
 
 # Tensorboard Logs
 runs/
+test_run/
+events.out.*
 
 # Numpy arrays
 *.npy
 
+# Pickles
+*.mpk
+
 # Pytorch models
-*.pt
+*.pth
