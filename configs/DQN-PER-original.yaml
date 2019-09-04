@@ -1,6 +1,8 @@
 # python train.py <config_file_path> <random_seed>
 # Example : python3 train.py config/example.yaml 123
-    
+# config identical to https://github.com/higgsfield/RL-Adventure/blob/master/4.prioritized%20dqn.ipynb
+EXP_NAME : 'DQN-PER-original'
+
 # GPU Acceleration
 USE_GPU : True
 
@@ -32,10 +34,3 @@ MODEL_NAME: 'DQN' #'D2QN' 'D1QN' 'DQN' 'DuDQN' 'DuD2QN'
 OPTIMIZER: 'Adam' #'SGD'
 LEARNING_RATE: 0.001
 CRITERION: 'MSE' #'HUBER'
-
-# RUNNING TIME WITH GPU ACCEL
-# DQN   : 2min 50sec
-# D1QN  : 2min 49sec
-# D2QN  : 3min 3sec
-# DuDQN : 4min 5sec
-# DuD2QN: 4min 17sec
