@@ -16,3 +16,7 @@ events.out.*
 
 # Pytorch models
 *.pth
+
+# Images and GIFS
+*.png
+*.gif
